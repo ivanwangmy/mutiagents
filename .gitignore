@@ -11,6 +11,7 @@ venv/
 .env
 .env.local
 *.env
+docs/prompt/api key deepseekflash.md
 backend/data/
 *.db
 *.sqlite3
