@@ -1,0 +1,64 @@
+{
+  "api": [],
+  "direct": [
+    {
+      "label": "参数类型错误",
+      "ok": false,
+      "error": "参数校验失败：123 is not of type 'string'",
+      "result": null,
+      "duration_ms": 0
+    },
+    {
+      "label": "缺少必填参数",
+      "ok": false,
+      "error": "参数校验失败：'expression' is a required property",
+      "result": null,
+      "duration_ms": 0
+    },
+    {
+      "label": "额外未知参数",
+      "ok": false,
+      "error": "参数校验失败：Additional properties are not allowed ('extra' was unexpected)",
+      "result": null,
+      "duration_ms": 0
+    },
+    {
+      "label": "正常计算",
+      "ok": true,
+      "error": null,
+      "result": {
+        "expression": "2+3*4",
+        "value": 14
+      },
+      "duration_ms": 0
+    },
+    {
+      "label": "非法表达式",
+      "ok": false,
+      "error": "ValueError: 不支持的函数",
+      "result": null,
+      "duration_ms": 0
+    },
+    {
+      "label": "超过调用上限",
+      "ok": false,
+      "error": "工具 calculator 本任务调用次数已达上限（2 次）",
+      "result": null,
+      "duration_ms": 0
+    },
+    {
+      "label": "Mia 调用 Python",
+      "ok": false,
+      "error": "Agent 未被授权使用工具 python_sandbox",
+      "result": null,
+      "duration_ms": 0
+    },
+    {
+      "label": "未注册工具",
+      "ok": false,
+      "error": "工具未注册或未授权给当前 Agent：not_exists",
+      "result": null,
+      "duration_ms": 0
+    }
+  ]
+}
